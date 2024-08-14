@@ -2,6 +2,8 @@
 This is a simple setup for a locally running private discord bot that can download and display Instagram pictures, posts and videos, provided the bot has the link tagged alongside it. 
 It runs using the python instaloader library to download the Instagram content (by extracting the shortcode from the provided hyperlink) and sends the files, thumbnails along with captions (if any) to the discord channel where it was tagged. It cleans up the downloads by deleting the local directory after it has succcessfully managed to send the files. It also prints error messages dealing with why the file wasn't downloaded in case of specific exceptions such as no files present, no media found in post, or the link being invalid; thus dealing well with error handling. 
 
+Note : Do not make too many requests in a fixed time interval using the bot as that could lead to Instagram blocking the IP address temporarily from accessing content. 
+
 ## Screenshots
 
 ![image](https://github.com/user-attachments/assets/4606d7e8-a642-4f53-953e-778c31821bc2)
