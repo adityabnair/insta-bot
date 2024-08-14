@@ -63,7 +63,7 @@ async def on_message(message):
                         print(f"Found file: {file_path}")
                         if file_name.endswith(('.mp4', '.jpg')):
                             try:
-                                # Send the video or image file to Discord
+                                # Send the video or image file to the Discord channel
                                 await message.channel.send(file=discord.File(file_path))
                                 files_sent = True
                             except Exception as e:
